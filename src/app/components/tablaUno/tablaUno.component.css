@@ -1,0 +1,67 @@
+/* Contenedor de las tarjetas */
+.card {
+  width: 350px; /* Aumentado el ancho de la tarjeta */
+  border-radius: 15px; /* Esquinas más redondeadas */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+  margin: 20px;
+  background-color: #f9f9f9; /* Fondo más claro */
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease; /* Transiciones más suaves */
+}
+
+/* Efecto hover para la tarjeta */
+.card:hover {
+  transform: translateY(-10px); /* Levanta más al hacer hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
+  background-color: #ffffff; /* Cambia el fondo al hacer hover */
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 25px; /* Más espacio interior */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Título de la tarjeta */
+.card-title {
+  font-size: 24px; /* Tamaño de fuente más grande */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222; /* Color más oscuro para el título */
+}
+
+/* Texto de la tarjeta */
+.card-text {
+  font-size: 18px; /* Tamaño de fuente más grande */
+  color: #666; /* Color de texto más suave */
+  margin-bottom: 15px;
+}
+
+/* Botón */
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px; /* Mayor espacio en el botón */
+  font-size: 18px; /* Tamaño de fuente más grande */
+  color: #ffffff; /* Color de texto blanco */
+  background-color: #28a745; /* Color verde */
+  border: none;
+  border-radius: 8px; /* Esquinas redondeadas del botón */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición más suave */
+}
+
+/* Hover del botón */
+.btn:hover {
+  background-color: #218838; /* Color verde más oscuro al hacer hover */
+  transform: scale(1.05); /* Aumenta el tamaño del botón al hacer hover */
+}
+
+/* Contenedor general para ajustar las tarjetas en un diseño de cuadrícula */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Espacio mayor entre tarjetas */
+  padding: 30px; /* Espacio interior mayor en el contenedor */
+}

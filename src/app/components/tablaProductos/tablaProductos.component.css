@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif; /* Fuente moderna */
+  background-color: #121212; /* Fondo oscuro */
+  color: #e0e0e0; /* Texto claro */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1400px; /* Ancho máximo aumentado */
+  margin: 20px auto; /* Espaciado */
+  padding: 40px; /* Mayor espacio */
+  background-color: #1e1e1e; /* Fondo más oscuro */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra pronunciada */
+  border-radius: 20px; /* Bordes redondeados */
+}
+
+h1 {
+  font-size: 54px;
+  color: #f50ae1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 36px; /* Subtítulo más grande */
+  color: #bb86fc; /* Color púrpura */
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #6200ea; /* Color violeta */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  padding: 15px 30px; /* Mayor padding */
+  border-radius: 10px; /* Bordes redondeados */
+  font-size: 20px; /* Texto más grande */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Efecto de transición */
+}
+
+button:hover {
+  background-color: #3700b3; /* Color violeta más oscuro */
+  transform: translateY(-3px); /* Efecto de elevación */
+}
+
+/* Cards Container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Cuadrícula adaptable */
+  gap: 30px; /* Espaciado entre cards */
+  margin: 30px 0; /* Margen superior e inferior */
+}
+
+/* Card Styles */
+.card {
+  background-color: #272727; /* Fondo de la card */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra pronunciada */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transición */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+.card img {
+  width: 100%; /* Imagen responsiva */
+  border-top-left-radius: 15px; /* Bordes redondeados */
+  border-top-right-radius: 15px; /* Bordes redondeados */
+}
+
+.card-body {
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Footer */
+.footer {
+  background-color: #1e1e1e; /* Fondo del footer */
+  color: #e0e0e0; /* Texto claro */
+  text-align: center; /* Texto centrado */
+  padding: 20px; /* Espaciado */
+  border-top: 1px solid #333; /* Línea superior */
+}
+
+.footer a {
+  color: #d8d50f; /* Color cyan */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px; /* Ajuste de tamaño para móvil */
+  }
+
+  h2 {
+    font-size: 28px; /* Ajuste de tamaño para móvil */
+  }
+
+  button {
+    width: 100%; /* Botón ocupa el ancho completo */
+  }
+}

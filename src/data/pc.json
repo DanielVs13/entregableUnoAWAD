@@ -1,0 +1,92 @@
+{
+  "pc": [
+    {
+      "id": 0,
+      "marca": "HP",
+      "modelo": "Omen 15",
+      "ram": "16GB",
+      "almacenamiento": "512GB SSD",
+      "precio": 1399.99
+    },
+    {
+      "id": 1,
+      "marca": "HP",
+      "modelo": "Pavilion x360",
+      "ram": "8GB",
+      "almacenamiento": "512GB SSD",
+      "precio": 699.99
+    },
+    {
+      "id": 2,
+      "marca": "Dell",
+      "modelo": "Inspiron 15",
+      "ram": "16GB",
+      "almacenamiento": "1TB HDD",
+      "precio": 849.99
+    },
+    {
+      "id": 3,
+      "marca": "Lenovo",
+      "modelo": "IdeaPad 3",
+      "ram": "12GB",
+      "almacenamiento": "256GB SSD",
+      "precio": 599.99
+    },
+    {
+      "id": 4,
+      "marca": "Apple",
+      "modelo": "MacBook Air M1",
+      "ram": "8GB",
+      "almacenamiento": "256GB SSD",
+      "precio": 999.99
+    },
+    {
+      "id": 5,
+      "marca": "Asus",
+      "modelo": "ZenBook 14",
+      "ram": "16GB",
+      "almacenamiento": "512GB SSD",
+      "precio": 849.99
+    },
+    {
+      "id": 6,
+      "marca": "Acer",
+      "modelo": "Aspire 5",
+      "ram": "8GB",
+      "almacenamiento": "1TB HDD",
+      "precio": 599.99
+    },
+    {
+      "id": 7,
+      "marca": "MSI",
+      "modelo": "GF63 Thin",
+      "ram": "16GB",
+      "almacenamiento": "512GB SSD",
+      "precio": 1099.99
+    },
+    {
+      "id": 8,
+      "marca": "Microsoft",
+      "modelo": "Surface Laptop 4",
+      "ram": "8GB",
+      "almacenamiento": "256GB SSD",
+      "precio": 999.99
+    },
+    {
+      "id": 9,
+      "marca": "Razer",
+      "modelo": "Blade 15",
+      "ram": "16GB",
+      "almacenamiento": "1TB SSD",
+      "precio": 1999.99
+    },
+    {
+      "id": 10,
+      "marca": "HP",
+      "modelo": "Omen 15",
+      "ram": "16GB",
+      "almacenamiento": "512GB SSD",
+      "precio": 1399.99
+    }
+  ]
+}

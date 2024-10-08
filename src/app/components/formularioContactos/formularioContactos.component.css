@@ -1,0 +1,77 @@
+/* Estilos generales para la página de contacto */
+body {
+  font-family: "Georgia", serif;
+  background-color: #2c3e50; /* Fondo oscuro elegante */
+  color: #ecf0f1; /* Texto claro */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #34495e; /* Fondo de la tarjeta más oscuro */
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Sombra intensa */
+  border: 1px solid #16a085; /* Borde de color verde claro */
+}
+
+/* Títulos */
+h1,
+h2 {
+  color: #e74c3c; /* Títulos rojos vibrantes */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* Sección de contacto */
+.contact-info {
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #16a085; /* Fondo verde llamativo */
+  border-radius: 15px;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra interna */
+}
+
+/* Formulario */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Espaciado más amplio entre campos */
+}
+
+form input,
+form textarea {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #ecf0f1; /* Fondo claro en los campos */
+  color: #2c3e50;
+  border: 2px solid #e74c3c; /* Borde rojo */
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+form textarea {
+  grid-column: span 2;
+}
+
+form button {
+  padding: 12px 20px;
+  border: 2px solid #16a085;
+  background-color: #e74c3c; /* Botón rojo */
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c0392b; /* Cambia a un rojo más oscuro */
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+}

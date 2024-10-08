@@ -1,0 +1,72 @@
+<button class="btn btn-primary" (click)="cambiarModo()">Cambiar Modo</button>
+
+<h1>Búsqueda</h1>
+
+<div class="filter-section">
+  <select name="" id="" [(ngModel)]="busqueda">
+    <option value="">Todas las marcas</option>
+    <option value="HP">HP</option>
+    <option value="Dell">Dell</option>
+    <option value="Lenovo">Lenovo</option>
+    <option value="Apple">Apple</option>
+    <option value="Asus">Asus</option>
+    <option value="Acer">Acer</option>
+  </select>
+</div>
+
+@if (vistaGaleria) {
+<div class="card-container">
+  @for (item of filtrarPorMarca(pc, busqueda); track item) {
+  <div class="card" [ngClass]="{ 'modo-nocturno': modoNocturno }">
+    <div class="card-body">
+      <p class="card-text">
+        {{ modoEspanol ? "Precio" : "Price" }}: ${{ item.precio }}
+      </p>
+      <p class="card-text">
+        {{ modoEspanol ? "Marca" : "Brand" }}: {{ item.marca }}
+      </p>
+      <p class="card-text">
+        {{ modoEspanol ? "Modelo" : "Model" }}: {{ item.modelo }}
+      </p>
+      <p class="card-text">{{ modoEspanol ? "RAM" : "RAM" }}: {{ item.ram }}</p>
+      <p class="card-text">
+        {{ modoEspanol ? "Almacenamiento SD" : "Storage" }}:
+        {{ item.almacenamiento }}
+      </p>
+      <button class="btn btn-primary" [routerLink]="['/detalles', item.id]">
+        {{ modoEspanol ? "Ver más detalles" : "See details" }}
+      </button>
+    </div>
+  </div>
+  }
+</div>
+} @else {
+<table class="table" [ngClass]="{ 'modo-nocturno': modoNocturno }">
+  <thead>
+    <tr>
+      <th>{{ modoEspanol ? "Precio" : "Price" }}</th>
+      <th>{{ modoEspanol ? "Marca" : "Brand" }}</th>
+      <th>{{ modoEspanol ? "Modelo" : "Model" }}</th>
+      <th>{{ modoEspanol ? "RAM" : "RAM" }}</th>
+      <th>{{ modoEspanol ? "Almacenamiento" : "Storage" }}</th>
+      <th>{{ modoEspanol ? "Acciones" : "Actions" }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of filtrarPorMarca(pc, busqueda); track item) {
+    <tr>
+      <td>${{ item.precio }}</td>
+      <td>{{ item.marca }}</td>
+      <td>{{ item.modelo }}</td>
+      <td>{{ item.ram }}</td>
+      <td>{{ item.almacenamiento }}</td>
+      <td>
+        <button class="btn btn-primary" [routerLink]="['/detalles', item.id]">
+          {{ modoEspanol ? "Ver más detalles" : "See details" }}
+        </button>
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>
+}
